@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="30dp"
+    tools:context=".help">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="这里是帮助"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="1、本应用是一个简单的计算器，包含四则运算、函数、进制转换、长度单位换算等功能；"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text=" 2、计算函数时，先点击参加运算的数字，再点击函数按钮即可；"/>
+          <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+              android:textSize="25dp"
+        android:text=" 3、功能非常简单，体验后还望您提出宝贵的意见!"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text=" 4、能力有限，只能算一位小数"/>
+</LinearLayout>

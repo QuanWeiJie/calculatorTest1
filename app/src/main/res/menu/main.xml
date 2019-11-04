@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/unit"
+        android:title="单位换算"/>
+    <item
+        android:id="@+id/version"
+        android:title="进制转换"/>
+    <item
+        android:id="@+id/help"
+        android:title="帮助/help"/>
+    <item
+        android:id="@+id/exit"
+        android:title="退出/exit"/>
+</menu>

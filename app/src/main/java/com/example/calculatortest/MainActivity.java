@@ -1,12 +1,16 @@
 package com.example.calculatortest;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import android.widget.Button;
@@ -98,7 +102,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 }
-   //@Override
+
+    @Override
+    public boolean onCreateOptionsMenu( Menu menu) {
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.version:
+                Intent intent1 = new Intent(MainActivity.this, version.class);
+                startActivity(intent1); break;
+            case R.id.unit:
+                Intent intent2 = new Intent(MainActivity.this, unit.class);
+                startActivity(intent2); break;
+            case R.id.help:
+                Intent intent3 = new Intent(MainActivity.this, help.class);
+                startActivity(intent3); break;
+            case R.id.exit: finish();break;
+            default:
+        }
+        return true;
+    }
+    //@Override
            public void onClick(View view) {
 
       String str = et_input.getText().toString();
